@@ -76,7 +76,7 @@ static dispatch_queue_t json_request_operation_processing_queue() {
             // Workaround for a bug in NSJSONSerialization when Unicode character escape codes are used instead of the actual character
             // See http://stackoverflow.com/a/12843465/157142
             NSData *JSONData = [self.responseString dataUsingEncoding:NSUTF8StringEncoding];
-            self.responseJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:self.JSONReadingOptions error:&error];
+            self.responseJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableContainers|self.JSONReadingOptions error:&error];
         }
 
         self.JSONError = error;

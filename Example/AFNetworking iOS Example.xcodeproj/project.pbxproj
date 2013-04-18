@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2982AD3217107C0000FFF048 /* adn.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2982AD3117107C0000FFF048 /* adn.cer */; };
+		4DF45835171FA6AB00477A20 /* AppHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF45834171FA6AB00477A20 /* AppHTTPClient.m */; };
+		4DF45838171FA6E400477A20 /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF45837171FA6E400477A20 /* APIWrapper.m */; };
 		F8129C7415910C37009BFE23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8129C7215910C37009BFE23 /* AppDelegate.m */; };
 		F818101615E6A0C600EF93C2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ABD6EC159FC2CE001BE42C /* MobileCoreServices.framework */; };
 		F88812F016C533D6003C8B8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E469E013957DF100DB05C8 /* Security.framework */; };
@@ -42,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		2982AD3117107C0000FFF048 /* adn.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = adn.cer; sourceTree = SOURCE_ROOT; };
+		4DF45833171FA6AB00477A20 /* AppHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHTTPClient.h; sourceTree = "<group>"; };
+		4DF45834171FA6AB00477A20 /* AppHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHTTPClient.m; sourceTree = "<group>"; };
+		4DF45836171FA6E400477A20 /* APIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIWrapper.h; sourceTree = "<group>"; };
+		4DF45837171FA6E400477A20 /* APIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
 		50ABD6EC159FC2CE001BE42C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F8129C3815910830009BFE23 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
 		F8129C7215910C37009BFE23 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -111,6 +117,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DF45832171FA6AB00477A20 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4DF45833171FA6AB00477A20 /* AppHTTPClient.h */,
+				4DF45834171FA6AB00477A20 /* AppHTTPClient.m */,
+				4DF45836171FA6E400477A20 /* APIWrapper.h */,
+				4DF45837171FA6E400477A20 /* APIWrapper.m */,
+			);
+			name = Networking;
+			path = ../Networking;
+			sourceTree = "<group>";
+		};
 		F8DA09C61396AB690057D0CC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +229,7 @@
 		F8E469931395743A00DB05C8 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				4DF45832171FA6AB00477A20 /* Networking */,
 				F8FA949B150EFEC100ED4EAD /* AFNetworking */,
 			);
 			name = Vendor;
@@ -349,6 +368,8 @@
 				F8FA94BA150EFEC100ED4EAD /* UIImageView+AFNetworking.m in Sources */,
 				F8FA94C1150F019100ED4EAD /* PostTableViewCell.m in Sources */,
 				F8129C7415910C37009BFE23 /* AppDelegate.m in Sources */,
+				4DF45835171FA6AB00477A20 /* AppHTTPClient.m in Sources */,
+				4DF45838171FA6E400477A20 /* APIWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
